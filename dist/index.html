@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d7e80e3740.js" crossorigin="anonymous"></script>
+    <title>Harry Potter</title>
+</head>
+<body>
+    <!--Här börjar menun-->
+    <nav>
+        <button class="btn__character">
+            <aside>
+                01
+            </aside>
+            <section>
+                <h2>Character Cards</h2>
+                <p>Do you wish to learn more about different characters from the Harry Potter World, then this is the place to do so</p>
+            </section>
+        </button>
+        <button class="btn__spells">
+            <aside>
+                02
+            </aside>
+            <section>
+                <h2>Spells</h2>
+                <p>Do you want to learn more about the different spells that you can find in the magical world of Harry Potter, then this is the place for you to look</p>
+            </section>
+        </button>
+        <button class="btn__potions">
+            <aside>
+                03
+            </aside>
+            <section>
+                <h2>Potions</h2>
+                <p>Do you love potions and wish to learn more about them? Then this is the place to go</p>
+            </section>
+        </button>
+        <button class="btn__quiz">
+            <aside>
+                04
+            </aside>
+            <section>
+                <h2>Quiz</h2>
+                <p>Do you think you know everything there is to know about the Harry Potter world? Then this is the place to try that out. Good luck, you might need it!</p>
+            </section>
+        </button>
+    </nav>
+    <button class="toggle">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark dontShow"></i>
+    </button>
+    <!--Här slutar menyn-->
+
+    <!--Här börjar sidan när man söker information om olika Harry Potter karaktärer-->
+    <div class="characters__page">
+        <header class="header">
+        <h1>Search for Harry Potter characters</h1>
+        <p>Hover or click on the card to learn more about the person.</p>
+        <form>
+            <input class="search" type="text" id="search" placeholder="Search name...">
+            <button class="searchBtn" type="submit" id="searchBtn">Search!</button>
+        </form>
+        </header>
+        <main class="characterSearchResult">
+        </main>
+    </div>
+    <!--Här slutar sidan där man söker information om Harry Potter karaktärer-->
+    <!--Här börjar spells sidan-->
+    <div class="spells__page d-none">
+        <header class="header">
+            <h1>Spells</h1>
+            </header>
+            <main class="spellsPage">
+            </main>
+    </div>
+    <!--Här slutar spells -->
+
+        <!--Här börjar potions sidan-->
+        <div class="potions__page d-none">
+            <header class="header">
+                <h1>Potions</h1>
+            </header>
+            <main class="potionsPage">
+            </main>
+        </div>
+        <!--Här slutar potions sidan -->
+
+        <!--Här börjar quiz sidan-->
+        <div class="quiz__page d-none">
+            <header class="header">
+                <h1>Harry Potter Quiz</h1>
+                <section class="quizNav">
+                    <button class="quizpageBtn active">Quiz Page</button>
+                    <button class="highscorepageBtn notActive">High Scores</button>
+                </section>
+            </header>
+            <main class="quizPage">
+                <h2>Quiz Page</h2>
+                <form>
+                    <input class="username" type="text" placeholder="Username"> 
+                    <button class="startQuizBtn">Start Quiz</button>
+                </form>
+            </main>
+            <main class="quizPageStarted d-none">
+            </main>
+            <main class="highScorePage d-none">
+                <h2 class="highscoreHeader">High Score</h2>
+                <ol class="highscoreList"></ol>
+            </main>
+        </div>
+        <!--Här slutar quiz sidan -->
+        <div class="showResult d-none">
+            <h2 class="gameoverMessage"></h2>
+        </div>
+
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
