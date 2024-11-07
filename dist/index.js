@@ -577,7 +577,7 @@ function showWinnerPage(correctAnswers, username) {
     const winnerMessage = document.createElement('h1');
     winnerMessage.classList.add('winnerMessage');
     if (correctAnswers < 7) {
-        winnerMessage.textContent = `${username}, you suck! You only got ${correctAnswers} correct answer. You are not a true Harry Potter fan! What are you even doing this quiz for?`;
+        winnerMessage.textContent = `${username}, you suck! You only got ${correctAnswers} correct answer. You are not a true Harry Potter fan! Why are you even doing this quiz for?`;
     }
     else if (correctAnswers > 19) {
         winnerMessage.textContent = `${username}, you rock! You got ${correctAnswers} correct answers! You are a true Harry Potter fan!`;
